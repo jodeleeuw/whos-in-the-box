@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Who's in the Box?</title>
+    <link rel="icon" href="data:," />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- jsPsych. Versions are pinned so every participant runs the same code. -->
+    <script src="https://unpkg.com/jspsych@8.2.3"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-button-response@2.1.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-fullscreen@2.1.0"></script>
+    <link rel="stylesheet" href="https://unpkg.com/jspsych@8.2.3/css/jspsych.css" />
+
+    <!-- SaccadeJS: core first, because the other packages depend on it. -->
+    <script src="https://unpkg.com/@saccadejs/core@1.0.0"></script>
+    <script src="https://unpkg.com/@saccadejs/extension@1.0.0"></script>
+    <script src="https://unpkg.com/@saccadejs/plugin-preview@1.0.0"></script>
+    <script src="https://unpkg.com/@saccadejs/plugin-time-sync@1.0.0"></script>
+
+    <!-- The game -->
+    <link rel="stylesheet" href="css/whos-in-the-box.css" />
+    <script src="js/wib-art.js"></script>
+    <script src="js/wib-sound.js"></script>
+    <script src="js/plugin-whos-in-the-box.js"></script>
+    <script src="js/plugin-whos-in-the-box-peek.js"></script>
+  </head>
+  <body>
+    <script src="js/experiment.js"></script>
+  </body>
+</html>
